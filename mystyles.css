@@ -7,8 +7,6 @@ body {
 }
 
 
-
-
 img {
     border-radius: 50%;
     padding: 35px 10px 30px 10px;
@@ -17,59 +15,155 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "boxOne boxTwo boxTwo"
+    "boxThree boxFour boxFour"
+    "boxFive boxSix boxSix"
+    "boxSeven boxEight boxEight";
     width: 75%;
     margin: 0 auto;
     
 }
 
+.box-4-left {
+    float: left;
+    padding-left: 50px;
+}
+
+.box-4-right {
+    float: right;
+    padding-right: 50px;
+  
+}
+
+.box-6-left {
+    float: left;
+    height:300px;
+    width: 33.33%;
+   
+}
+
+.box-6-mid {
+    float: left;
+    height:300px;
+    width: 33.33%;
+   
+
+}
+
+.box-6-right {
+    float: left;
+    height:300px;
+    width: 33.33%;
+    
+   
+}
+
+.box-8-1 {
+    display: inline-block;
+   
+
+    
+}
+
+.box-8-2 {
+    display: inline-block;
+    padding: 20px;
+   
+   
+}
+
+.box-8-3 {
+    display: inline-block;
+    padding: 20px;
+    
+}
+.box-8-4 {
+    display: inline-block;
+    padding: 20px;
+   
+}
+.box-8-5 {
+    display: inline-block;
+    padding: 20px;
+    
+}
+.box-8-6 {
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.skill-box {
+    width: 60%;
+    margin-left: 150px;
+
+}
+
 .box-1 {
+    display: inline-block;
     background-color: #659157;
     height: 200px;
     text-align: center;
+    grid-area: boxOne;
+   
     
 
     
 }
 .box-2 {
+    display: inline-block;
     height: 200px;
     text-align: center;
     border-right: solid black 2px;
+    grid-area: boxTwo;
+    
     
 }
 
 .box-3 {
+    display: inline-block;
     background-color: #659157;
     height: 400px;
     text-align: center;
+    grid-area: boxThree;
    
 }
 
 .box-4 {
-   
+    display: inline-block;
     height: 400px;
     text-align: center;
     border-right: solid black 2px;
+    grid-area: boxFour;
 }
 
 .box-5 {
+    display: inline-block;
     background-color: #659157;
     height: 400px;
     text-align: center;
+    grid-area: boxFive
 }
 
 .box-6 {
-    
-    height: 400x;
+    display: inline-block;
     text-align: center;
     border-right: solid black 2px;
+    height: 400px;
+    grid-area: boxSix;
 }
 
 .box-7 {
+    display: inline-block;
     background-color: #659157;
+    grid-area: boxSeven;
 }
 
 .box-8 {
+    display: inline-block;
     border-right: solid black 2px;
+    grid-area: boxEight;
 }
 
 td { 
@@ -122,7 +216,174 @@ a:hover {
 }
 
 .answer {
-    background-color: #ba3f1d;
+    color: #ba3f1d;
     border-radius: 50%;
+    font-weight: bold;
+    
 }
 
+h3 {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 300px) {
+
+
+    
+    body {
+        font-family: Montserrat, sans-serif;
+        margin: 0 auto;
+        font-size: 12px;
+        
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "boxOne"
+        "boxTwo"
+        "boxThree"
+        "boxFour"
+        "boxFive" 
+        "boxSix"
+        "boxSeven" 
+        "boxEight";
+        width: 100%;
+        
+    }
+    
+    .box-1 {
+        display: inline-block;
+        background-color: #659157;
+        height: 200px;
+        text-align: center;
+        grid-area: boxOne;;
+        grid-column: 1;
+       
+        
+    
+        
+    }
+    .box-2 {
+        display: inline-block;
+        height: 200px;
+        text-align: center;
+        grid-area: boxTwo;
+        grid-column: 1;
+        
+        
+    }
+    
+    .box-3 {
+        display: inline-block;
+        background-color: #659157;
+        height: 400px;
+        text-align: center;
+        grid-area: boxThree;
+        grid-column: 1;
+       
+    }
+    
+    .box-4 {
+        display: inline-block;
+        height: 400px;
+        text-align: center;
+        grid-area: boxFour;
+        grid-column: 1;
+    }
+    
+    .box-5 {
+        display: inline-block;
+        background-color: #659157;
+        height: 400px;
+        text-align: center;
+        grid-area: boxFive;
+        grid-column: 1;
+    }
+    
+    .box-6 {
+        display: inline-block;
+        height: 400px;
+        text-align: center;
+        grid-area: boxSix;
+        grid-column: 1;
+    }
+    
+    .box-7 {
+        display: inline-block;
+        background-color: #659157;
+        grid-area: boxSeven;
+        grid-column: 1;
+    }
+    
+    .box-8 {
+        display: inline-block;
+        grid-area: boxEight;
+        grid-column: 1;
+    }
+
+    
+
+
+    
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+
+    body {
+        font-family: Montserrat, sans-serif;
+        margin: 0 auto;
+        
+        
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "boxOne boxTwo"
+        "boxThree boxFour"
+        "boxFive boxSix"
+        "boxSeven boxEight";
+        width: 75%;
+        margin: 0 auto;
+        
+        
+    }
+   
+
+
+    
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    body {
+        font-family: Montserrat, sans-serif;
+        margin: 0 auto;
+        background-color: 
+        
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "boxOne boxTwo boxTwo"
+        "boxThree boxFour boxFour"
+        "boxFive boxSix boxSix"
+        "boxSeven boxEight boxEight";
+        width: 75%;
+        margin: 0 auto;
+        
+    }
+  
+
+}
