@@ -1,0 +1,122 @@
+$box-odd-background-color: #659157;
+$border-right: solid black 2px;
+$icon-color: black;
+$hr-color: white;
+$intro-t-color: #dbb957;
+
+@mixin box-start() {
+    display: inline-block;
+    height: 200px;
+    text-align: center;
+}
+
+@mixin box-end() {
+    display: inline-block;
+    height: 400px;
+    text-align: center;
+}
+
+@mixin box-6() {
+    float: left;
+    height:300px;
+    width: 33.33%;
+}
+
+@mixin box-8() {
+    display: inline-block;
+    padding: 20px;
+}
+
+body {
+
+}
+
+.box-6-left {
+    @include box-6();
+}
+
+.box-6-mid {
+    @include box-6();
+}
+
+.box-6-right {
+    @include box-6();
+}
+
+.box-8-2 {
+    @include box-8();
+}
+
+.box-8-3 {
+    @include box-8();
+}
+
+.box-8-4 {
+    @include box-8();
+}
+
+.box-8-5 {
+    @include box-8();
+}
+
+.box-8-6 {
+    @include box-8();
+}
+
+.box-1 {
+    @include box-start();
+    background-color:$box-odd-background-color;
+}
+
+.box-2 {
+    @include box-start();
+    border-right: $border-right;
+
+}
+
+.box-3 {
+    @include box-end();
+    background-color: $box-odd-background-color;
+}
+
+.box-4 {
+    @include box-end();
+    border-right: $border-right;
+}
+
+.box-5 {
+    @include box-end();
+    background-color: $box-odd-background-color
+}
+
+.box-6 {
+    @include box-end();
+    border-right: $border-right;
+
+}
+
+.box-7 {
+    @include box-end();
+    background-color: $box-odd-background-color;
+}
+
+.box-8 {
+    @include box-end();
+    border-right: $border-right;
+}
+
+.icons {
+    color: $icon-color;
+}
+
+th {
+    border-bottom: $border-right;
+}
+
+hr {
+    color: $hr-color;
+}
+
+.introtext {
+    background-color: $intro-t-color;
+}
