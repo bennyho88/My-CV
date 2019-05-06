@@ -3,6 +3,7 @@ $border-right: solid black 2px;
 $icon-color: black;
 $hr-color: white;
 $intro-t-color: #dbb957;
+$color-red: #ba3f1d;
 
 @mixin box-start() {
     display: inline-block;
@@ -119,4 +120,16 @@ hr {
 
 .introtext {
     background-color: $intro-t-color;
+}
+
+a:hover {
+    background-color: $intro-t-color;
+}
+
+a:link {
+    color: $icon-color;
+}
+
+.answer {
+    color: $color-red;
 }

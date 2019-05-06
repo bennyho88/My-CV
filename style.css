@@ -112,4 +112,16 @@ hr {
 .introtext {
   background-color: #dbb957;
 }
+
+a:hover {
+  background-color: #dbb957;
+}
+
+a:link {
+  color: black;
+}
+
+.answer {
+  color: #ba3f1d;
+}
 /*# sourceMappingURL=style.css.map */
